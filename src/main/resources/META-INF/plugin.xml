@@ -1,6 +1,6 @@
 <idea-plugin version="2">
     <id>com.simpleplugin</id>
-    <name>Kotlin Simple Language Pluging</name>
+    <name>Kotlin Simple Language Plugin</name>
     <version>0.1</version>
     <vendor email="support@yourcompany.com" url="http://www.jetbrains.org"></vendor>
 
@@ -21,6 +21,7 @@
     -->
 
     <extensions defaultExtensionNs="com.intellij">
+         <fileTypeFactory implementation="com.simpleplugin.SimpleFileTypeFactory"/>
     </extensions>
 
     <application-components>
