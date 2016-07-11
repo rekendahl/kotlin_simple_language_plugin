@@ -20,7 +20,7 @@ targetCompatibility = JavaVersion.VERSION_1_6
 
 intellij {
     version '143.2370.31'
-    pluginName 'Kotlin Simple Language Pluging'
+    pluginName 'Kotlin Simple Language Plugin'
     updateSinceUntilBuild = false
 }
 
