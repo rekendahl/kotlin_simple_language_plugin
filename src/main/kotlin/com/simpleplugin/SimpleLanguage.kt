@@ -2,6 +2,9 @@ package com.simpleplugin
 
 import com.intellij.lang.Language
 
-object SimpleLanguage : Language("Simple", "text/simple", "text/x-simple", "application/x-simple") {
+class SimpleLanguage : Language("Simple", "text/simple") {
+    companion object {
+        val INSTANCE: SimpleLanguage = SimpleLanguage()
+    }
     override fun getDisplayName() = "Simple"
 }
