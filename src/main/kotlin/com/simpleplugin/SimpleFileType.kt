@@ -4,7 +4,7 @@ import com.intellij.openapi.fileTypes.LanguageFileType
 import javax.swing.Icon
 
 
-object SimpleFileType : LanguageFileType(SimpleLanguage.INSTANCE) {
+class SimpleFileType : LanguageFileType(SimpleLanguage.INSTANCE) {
 
     object DEFAULTS {
         val EXTENSION: String = "simple"
@@ -17,4 +17,9 @@ object SimpleFileType : LanguageFileType(SimpleLanguage.INSTANCE) {
     override fun getDefaultExtension(): String = DEFAULTS.EXTENSION
 
     override fun getIcon(): Icon = SimpleIcons.SIMPLE
+
+    companion object {
+        @JvmField // ToDo: <-- Copied from HaskellFileType.kt. What does this do?
+        val INSTANCE: SimpleFileType = SimpleFileType()
+    }
 }

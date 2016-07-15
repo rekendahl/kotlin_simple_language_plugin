@@ -11,13 +11,13 @@
   elementTypeHolderClass="com.simpleplugin.psi.SimpleTypes"
   elementTypeClass="com.simpleplugin.psi.SimpleElementType"
   tokenTypeClass="com.simpleplugin.psi.SimpleTokenType"
-
-  psiImplUtilClass="com.simpleplugin.psi.impl.SimplePsiImplUtil"
 }
 
 simpleFile ::= item_*
 
 private item_ ::= (property|COMMENT|CRLF)
 
-property ::= (KEY? SEPARATOR VALUE?) | KEY {mixin="com.simpleplugin.psi.impl.SimpleNamedElementImpl"
-  implements="com.simpleplugin.psi.SimpleNamedElement" methods=[getKey getValue getName setName getNameIdentifier getPresentation]}
+property ::= (KEY? SEPARATOR VALUE?) | KEY
+
+//property ::= (KEY? SEPARATOR VALUE?) | KEY {mixin="com.simpleplugin.psi.impl.SimpleNamedElementImpl"
+//  implements="com.simpleplugin.psi.SimpleNamedElement" methods=[getKey getValue getName setName getNameIdentifier getPresentation]}

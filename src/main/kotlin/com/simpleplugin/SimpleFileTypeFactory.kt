@@ -6,6 +6,6 @@ import com.intellij.openapi.fileTypes.FileTypeFactory
 
 class SimpleFileTypeFactory : FileTypeFactory() {
     override fun createFileTypes(consumer: FileTypeConsumer) {
-        consumer.consume(SimpleFileType, SimpleFileType.DEFAULTS.EXTENSION)
+        consumer.consume(SimpleFileType.INSTANCE, SimpleFileType.DEFAULTS.EXTENSION)
     }
 }
