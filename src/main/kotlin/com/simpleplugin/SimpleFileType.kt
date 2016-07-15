@@ -4,7 +4,7 @@ import com.intellij.openapi.fileTypes.LanguageFileType
 import javax.swing.Icon
 
 
-object SimpleFileType : LanguageFileType(SimpleLanguage) {
+object SimpleFileType : LanguageFileType(SimpleLanguage.INSTANCE) {
 
     object DEFAULTS {
         val EXTENSION: String = "simple"
