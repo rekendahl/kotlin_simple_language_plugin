@@ -2,7 +2,7 @@
     <id>com.simpleplugin</id>
     <name>Kotlin Simple Language Plugin</name>
     <version>0.1</version>
-    <vendor email="support@yourcompany.com" url="http://www.jetbrains.org"></vendor>
+    <vendor email="support@yourcompany.com" url="http://www.jetbrains.org">YourCompany</vendor>
 
     <description><![CDATA[
     ]]></description>
